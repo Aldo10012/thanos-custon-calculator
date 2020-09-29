@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-style: 'Goudy Old Style';
+}
+
+
+/* Styles for gif and caption */
+#banner{
+    background-image: url("https://static.comicvine.com/uploads/original/11112/111120784/6803223-2203608508-Limit.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    margin: 0;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caption{
+    /* background-color: rgba(134, 134, 134,0.4);  */
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    border: solid 0.4em rgba(240,240,240,0.9);
+}
+
+#border{
+    color: rgba(240,240,240,0.9);
+    font-size: 3em
+}
+
+
+/* Styles for calculator section */
+#calculator{
+    /* background-color: lightyellow; */
+    margin: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* styling input sections */
+#inputs-section{
+    background-color: lightblue;
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input{
+    background-color: lightpink;
+    height: 50%;
+    border: solid 2px;
+    margin: 5px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.75em;
+}
+
+.input > p{
+    background-color: red;
+    padding: 10px;
+}
+
+.input-form{
+    align-self: center;
+    width: 50%;
+    padding: 1em;
+    font-size: 1em;
+    background-color: rgba(0,0,0,0);
+    border: solid 2px;
+}
+
+
+
+
+/* styling output sectoin */
+#output-section{
+    background-color: lightgreen;
+    width: 45%;
+    height: 80%;
+}
+
