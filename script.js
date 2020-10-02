@@ -1,7 +1,7 @@
 const percent_input = document.querySelector('#percent_input');
 const throw_speed = document.querySelector('#throw_speed');
 const display_force = document.querySelector('#display_force');
-
+const saved = document.querySelector('#saved');
 
 // Distance between Earth and Moon:         238900 miles or 284472 km
     // The distance is also the height
@@ -57,8 +57,20 @@ function calculateForce() {
 
 
   // const force_value = percent_value * throw_value;
-  console.log(`${force_gigaton.toFixed(2)} gigatons`)
-  display_force.innerHTML = `${force_gigaton.toFixed(2)} gigatons`;
+  const savedBool = saved.value; 
+  console.log(savedBool.toString())
+
+
+  if(savedBool.toString() === 'No'){
+    console.log(`${force_gigaton.toFixed(2)} gigatons`)
+    display_force.innerHTML = `${force_gigaton.toFixed(2)} gigatons`;
+  } else {
+    console.log(`0 gigatons`)
+    display_force.innerHTML = `0 gigatons`;
+ }
+
+//   console.log(`${force_gigaton.toFixed(2)} gigatons`)
+//   display_force.innerHTML = `${force_gigaton.toFixed(2)} gigatons`
 }
 
 
