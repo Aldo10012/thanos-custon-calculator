@@ -76,3 +76,4 @@ function calculateForce() {
 
 percent_input.addEventListener('input', calculateForce);
 throw_speed.addEventListener('input', calculateForce);
+saved.addEventListener('input', calculateForce);
