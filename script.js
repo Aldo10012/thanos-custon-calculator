@@ -26,3 +26,21 @@ const mass_kg = 1.35 * (10**22)
 // force_newtons = mass_g * acceloration
 // force_megaton = force_newtons / 9806650000
 
+
+
+
+const percent_input = document.querySelector('#percent_input');
+const throw_speed = document.querySelector('#throw_speed');
+const display_force = document.querySelector('#display_force');
+
+function calculateForce() {
+  const percent_value = parseFloat(percent_input.value);
+  const throw_value = parseFloat(throw_speed.value);
+  const force_value = percent_value * throw_value;
+  console.log(force_value);
+  display_force.innerHTML = force_value;
+}
+
+
+percent_input.addEventListener('input', calculateForce);
+throw_speed.addEventListener('input', calculateForce);
